@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="output.css" />
+  </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+    body {
+      font-family: 'Bricolage Grotesque', sans-serif;
+    }
+  </style>
+  <body class="h-screen bg-black text-yellow-50">
+    <div
+      class="flex h-full flex-col items-center justify-evenly text-9xl font-bold">
+      <h1>We'll go back to...</h1>
+      <h1
+        class="w-full text-center"
+        id="years">
+        2024
+      </h1>
+    </div>
+    <script>
+      const startCounter = (counterId) => {
+        const counter = document.getElementById(counterId);
+        let count = 2024;
+
+        // Flag to indicate if the counter is paused
+        let paused = false;
+
+        const interval = setInterval(() => {
+          // If paused, skip the interval
+          if (paused) return;
+
+          if (count == 2003) {
+            paused = true; // Set the paused flag
+            setTimeout(() => {
+              // Reset the paused flag after 10 seconds
+              paused = false;
+            }, 7000);
+          }
+
+          if (count == 1992) {
+            paused = true; // Set the paused flag
+            setTimeout(() => {
+              // Reset the paused flag after 10 seconds
+              paused = false;
+            }, 3000);
+          }
+
+          if (count < 1971) {
+            clearInterval(interval);
+            setTimeout(() => {
+              goBackCounter();
+            }, 1500);
+            return;
+          }
+
+          count--;
+          counter.innerHTML = count;
+        }, 75);
+      };
+
+      const goBackCounter = () => {
+        const counter = document.getElementById('years');
+        let count = 1971;
+        const interval = setInterval(() => {
+          if (count > 1979) {
+            clearInterval(interval);
+            return;
+          }
+
+          count++;
+          counter.innerHTML = count;
+        }, 25);
+      };
+
+      document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(() => {
+          startCounter('years');
+        }, 5000);
+      });
+    </script>
+  </body>
+</html>

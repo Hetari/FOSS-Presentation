@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  /* .reveal .slide-background-content {
+    @apply !brightness-75;
+  } */
+}
+
+@layer components {
+  .text-fancy {
+    @apply !bg-gradient-to-r !from-cyan-600  !via-indigo-800 !to-purple-600 !bg-clip-text !text-transparent;
+  }
+}

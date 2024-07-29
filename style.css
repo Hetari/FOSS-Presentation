@@ -6,6 +6,12 @@
   /* .reveal .slide-background-content {
     @apply !brightness-75;
   } */
+  .fragment.blur {
+    filter: blur(5px);
+  }
+  .fragment.blur.visible {
+    filter: none;
+  }
 }
 
 @layer components {

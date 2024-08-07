@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.333" height="20" viewBox="0 0 20.333 20">
+  <g id="Icon_-_veiw" data-name="Icon - veiw" transform="translate(0.166)">
+    <rect id="Rectangle_246" data-name="Rectangle 246" width="20" height="20" fill="#fff" opacity="0"/>
+    <g id="eye" transform="translate(0.834 3.333)">
+      <path id="Path_1065" data-name="Path 1065" d="M1,10.667S4.333,4,10.167,4s9.167,6.667,9.167,6.667S16,17.333,10.167,17.333,1,10.667,1,10.667Z" transform="translate(-1 -4)" fill="none" stroke="#9E9B9B" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <circle id="Ellipse_23" data-name="Ellipse 23" cx="2.5" cy="2.5" r="2.5" transform="translate(6.667 4.167)" fill="none" stroke="#9E9B9B" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
